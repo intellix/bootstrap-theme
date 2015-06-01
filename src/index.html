@@ -28,6 +28,20 @@
     .theme-showcase .navbar .container {
         width: auto;
     }
+
+    .grid-example .row {
+        padding-bottom: 5px;
+        background-color: #aaa;
+    }
+
+    .grid-example .row > article {
+        height: 30px;
+        line-height: 30px;
+        background-color: #eee;
+        text-align: center;
+        border: 1px solid black;
+    }
+
     </style>
 </head>
 
@@ -67,6 +81,81 @@
             <button type="button" class="btn btn-primary" ng-click="openModal()">Open Modal</button>
         </div>
 
+        <div class="page-header">
+            <h1>Typography</h1>
+        </div>
+
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+
+        <hr>
+
+        <p class="lead">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+        </p>
+        <p>
+            <strong>Lorem ipsum</strong> dolor sit amet, <i>consectetur adipisicing elit</i>, sed do eiusmod tempor <u>incididunt ut labore</u> et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation <em>ullamco laboris nisi</em> ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            <small>This line of text is meant to be treated as fine print.</small>
+        </p>
+
+        <hr>
+
+        <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>
+                Integer molestie lorem at massa
+                <ul>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit</li>
+                    <li>Purus sodales ultricies</li>
+                </ul>
+            </li>
+            <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
+        </ul>
+
+        <hr>
+
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+        </ol>
+
+        <hr>
+
+        <ul class="list-inline">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+        <hr>
+
+        <dl>
+            <dt>Description Text 1</dt>
+            <dd>Description Definition 1</dd>
+            <dt>Description Text 2</dt>
+            <dd>Description Definition 2</dd>
+        </dl>
+
+        <hr>
+
+        <dl class="dl-horizontal">
+            <dt>Description Text 1</dt>
+            <dd>Description Definition 1</dd>
+            <dt>Description Text 2</dt>
+            <dd>Description Definition 2</dd>
+        </dl>
 
         <div class="page-header">
             <h1>Buttons</h1>
@@ -764,6 +853,74 @@
                 <img ng-src="{{slide}}">
             </slide>
         </carousel>
+
+
+        <div class="page-header">
+            <h1>Grid</h1>
+        </div>
+
+        <div class="grid-example">
+            <div class="row">
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+                <article class="col-sm-1">sm-1</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-2">sm-2</article>
+                <article class="col-sm-2">sm-2</article>
+                <article class="col-sm-2">sm-2</article>
+                <article class="col-sm-2">sm-2</article>
+                <article class="col-sm-2">sm-2</article>
+                <article class="col-sm-2">sm-2</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-3">sm-3</article>
+                <article class="col-sm-3">sm-3</article>
+                <article class="col-sm-3">sm-3</article>
+                <article class="col-sm-3">sm-3</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-4">sm-4</article>
+                <article class="col-sm-4">sm-4</article>
+                <article class="col-sm-4">sm-4</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-6">sm-6</article>
+                <article class="col-sm-6">sm-6</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-7">sm-7</article>
+                <article class="col-sm-5">sm-5</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-8">sm-8</article>
+                <article class="col-sm-4">sm-4</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-9">sm-9</article>
+                <article class="col-sm-3">sm-3</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-10">sm-10</article>
+                <article class="col-sm-2">sm-2</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-11">sm-11</article>
+                <article class="col-sm-1">sm-1</article>
+            </div>
+            <div class="row">
+                <article class="col-sm-12">sm-12</article>
+            </div>
+        </div>
 
     </div> <!-- /container -->
 
